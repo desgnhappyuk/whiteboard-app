@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Whiteboard</title>
+  <style>
+    body { font-family: Arial, sans-serif; }
+    #canvas { border: 1px solid black; }
+  </style>
+</head>
+<body>
+  <h1>Whiteboard</h1>
+  <canvas id="canvas" width="800" height="600"></canvas>
+  <br>
+  <button onclick="addRectangle()">Add Rectangle</button>
+  <button onclick="addText()">Add Text</button>
+  <button onclick="pasteImage()">Paste Image</button>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/4.5.0/fabric.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
